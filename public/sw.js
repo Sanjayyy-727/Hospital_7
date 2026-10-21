@@ -1,5 +1,5 @@
 const CACHE_NAME = "medicare-static-v1";
-const APP_SHELL = ["/", "/manifest.webmanifest", "/icons/medicare-icon.svg"];
+const APP_SHELL = ["./", "./manifest.webmanifest", "./icons/medicare-icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_SHELL)));

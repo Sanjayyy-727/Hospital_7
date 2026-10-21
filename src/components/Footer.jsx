@@ -1,0 +1,2 @@
+import React from "react";
+import{HeartPulse}from"lucide-react";export default function Footer(){return <footer><div className="container foot"><div><b><HeartPulse size={20}/> medicare.</b><p>Quality healthcare, made easier to access.</p></div><div><strong>Contact</strong><p>Chennai, Tamil Nadu · care@medicare.example</p></div></div><div className="container copyright">© {new Date().getFullYear()} Medicare · Hospital Appointment Booking demo</div></footer>}

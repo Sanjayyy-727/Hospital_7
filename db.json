@@ -1,0 +1,55 @@
+{
+  "doctors": [
+    {
+      "name": "Dr. Rahul Verma",
+      "specialty": "Orthopedics",
+      "experience": 10,
+      "fee": 453,
+      "available": true,
+      "description": "Specialist in bone, joint, and muscle care.",
+      "id": "3"
+    },
+    {
+      "name": "sanjauy",
+      "specialty": "cardiology",
+      "experience": 2,
+      "fee": 486,
+      "available": true,
+      "description": "trds",
+      "id": "1dq2bF_9AaI"
+    },
+    {
+      "name": "sanjay",
+      "specialty": "cardiology",
+      "experience": 2,
+      "fee": 4000,
+      "available": true,
+      "description": "yes",
+      "id": "-mJmmNchFiM"
+    },
+    {
+      "name": "sanjay",
+      "specialty": "cardio",
+      "experience": 3,
+      "fee": 5666,
+      "available": true,
+      "description": "yes",
+      "id": "bpYL1qVicCk"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "101",
+      "patientName": "Demo Patient",
+      "patientEmail": "patient@example.com",
+      "patientPhone": "9876543210",
+      "doctorId": null,
+      "doctorName": "Dr. Arun Kumar",
+      "date": "2026-10-20",
+      "time": "10:00",
+      "status": "Confirmed",
+      "reason": "Routine checkup"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

@@ -1,0 +1,279 @@
+
+.control-center {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+  color: #203047;
+  background: #f6f9fc;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.control-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.control-header h1 {
+  margin: 6px 0;
+  font-size: 32px;
+  color: #123b65;
+}
+
+.control-header p {
+  color: #68798d;
+  margin: 8px 0 0;
+}
+
+.control-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #168a9b !important;
+}
+
+.control-center button {
+  cursor: pointer;
+  border: 1px solid #d7e1eb;
+  background: white;
+  color: #29425e;
+  border-radius: 7px;
+  padding: 10px 14px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.control-center button:hover {
+  filter: brightness(0.96);
+}
+
+.control-center button:focus-visible,
+.control-center input:focus-visible,
+.control-center select:focus-visible,
+.control-center textarea:focus-visible {
+  outline: 3px solid #83c9f5;
+  outline-offset: 2px;
+}
+
+.control-center .cc-refresh,
+.control-center .cc-primary {
+  color: white;
+  background: #126b91;
+  border-color: #126b91;
+  font-weight: 600;
+}
+
+.cc-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.cc-stats article {
+  padding: 22px;
+  background: white;
+  border: 1px solid #e5edf4;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(27, 58, 88, 0.04);
+}
+
+.cc-stats span,
+.cc-stats strong {
+  display: block;
+}
+
+.cc-stats span {
+  color: #6c7c90;
+  font-size: 14px;
+}
+
+.cc-stats strong {
+  color: #123b65;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.cc-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dce6ef;
+  flex-wrap: wrap;
+}
+
+.control-center .cc-tabs button {
+  border: none;
+  border-radius: 7px 7px 0 0;
+  background: transparent;
+  padding: 14px 18px;
+}
+
+.control-center .cc-tabs button.active {
+  background: #e3f3f8;
+  color: #075d7c;
+  font-weight: 700;
+  box-shadow: inset 0 -3px #168a9b;
+}
+
+.cc-panel {
+  padding: 24px;
+  background: white;
+  border: 1px solid #e3ebf2;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(27, 58, 88, 0.04);
+  margin-bottom: 24px;
+}
+
+.cc-panel h2 {
+  font-size: 20px;
+  color: #173d62;
+  margin: 0 0 20px;
+}
+
+.cc-panel h2:not(:first-child) {
+  margin-top: 34px;
+}
+
+.cc-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.cc-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #40536a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cc-form input,
+.cc-form select,
+.cc-form textarea,
+.cc-table select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d6e1eb;
+  border-radius: 7px;
+  background: white;
+  color: #26394d;
+  font: inherit;
+}
+
+.cc-form textarea {
+  resize: vertical;
+}
+
+.cc-form .cc-full {
+  grid-column: 1 / -1;
+}
+
+.cc-form .cc-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc-form .cc-checkbox input {
+  width: auto;
+}
+
+.cc-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cc-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.cc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.cc-table th,
+.cc-table td {
+  padding: 14px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e9eff5;
+  vertical-align: middle;
+}
+
+.cc-table th {
+  color: #5d7085;
+  background: #f5f8fb;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cc-table td {
+  color: #344a61;
+}
+
+.cc-row-actions {
+  white-space: nowrap;
+}
+
+.cc-row-actions button {
+  margin: 3px;
+  padding: 8px 10px;
+}
+
+.control-center .cc-row-actions .cc-delete {
+  color: #b42332;
+  border-color: #f1c9ce;
+  background: #fff5f5;
+}
+
+.cc-error {
+  background: #fff1f0;
+  color: #a12828;
+  border: 1px solid #f1c5c1;
+  padding: 13px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .control-center {
+    padding: 22px 14px 40px;
+  }
+
+  .control-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .control-header h1 {
+    font-size: 27px;
+  }
+
+  .cc-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .cc-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cc-form .cc-full {
+    grid-column: auto;
+  }
+
+  .cc-panel {
+    padding: 16px;
+  }
+}

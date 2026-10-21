@@ -1,0 +1,1 @@
+import{useCallback}from"react";import{useAppointmentsContext}from"../context/AppointmentContext.jsx";export default function useAppointments(){const c=useAppointmentsContext();const selectTimeSlot=useCallback(c.setTime,[c.setTime]);const clearAppointment=useCallback(c.clearSelection,[c.clearSelection]);return{...c,selectTimeSlot,clearAppointment}}
